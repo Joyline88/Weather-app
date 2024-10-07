@@ -27,7 +27,7 @@ function search(event) {
 
 function displayWeather(data) {
   let cityName = data.name;
-  let temperature = data.main.temp;
+  let temperature = Math.round(data.main.temp);
   let description = data.weather[0].description;
   let weatherElement = document.querySelector("#current-weather");
 
